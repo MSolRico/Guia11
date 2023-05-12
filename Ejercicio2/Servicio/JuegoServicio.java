@@ -16,9 +16,8 @@ public class JuegoServicio {
 
         JugadorServicio jgs = new JugadorServicio();
         boolean r = false;
-        int i = 0;
         do {
-            for (i = 0; i < ju.getJugadores().size(); i++) {
+            for (int i = 0; i < ju.getJugadores().size(); i++) {
                 r = jgs.disparo(ju.getJugadores().get(i), ju.getRevolver());
                 if (r) {
                     System.out.println("Terminó el juego, pierde " + ju.getJugadores().get(i).getNombre());
